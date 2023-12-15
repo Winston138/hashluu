@@ -1,0 +1,273 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', sans-serif;
+}
+p{
+    margin-bottom: .75rem;
+}
+.wrapper {
+    background: url(/img/main.webp) center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    vertical-align: middle;
+    background-attachment: fixed;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none ;
+}
+
+.container {
+    margin-bottom: 40px;
+    z-index: 5;
+}
+
+.header__menu {
+    padding: 20px 50px;
+    align-self: flex-end;
+}
+
+
+.phone {
+    font-size: 25px;
+    color: #fff !important;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.menu__list-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header__phone {
+    margin-left: auto;
+}
+.header_inner .button{
+    background:#e7e700;
+
+}
+.button {
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.main__text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.main {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.main__img {
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.main__data {
+    font-size: 28px;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.lineup__item {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 70px 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.foto{
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 210px;
+    height: 210px;
+    margin-bottom: 15px;
+  }
+  .foto img{
+    width:100%;
+    height:100%;
+      object-fit: cover;
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 10px;
+      color: #fff;
+  }
+
+  .from {
+    font-size: 15px;
+    font-weight: 300;
+    color: #bbb;
+  }
+
+  .location__text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    
+    margin-bottom: 30px;
+  }
+
+
+  .Contacts__wrapper {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    
+  }
+
+  .center__wrapper {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    max-width: 700px;
+      margin: 1rem auto;
+  }
+
+  .ticket__wraper {
+    text-align: center;
+  }
+
+  .ticket__text {
+    text-align: center;
+    font-size: 22px;
+  }
+
+.ticket__container {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    
+    margin-bottom: 40px;
+}
+
+.ticket__container h3 {
+    font-size: 22px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.ticket__container h2 {
+    font-size: 38px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.ticket__container-button {
+    background-color: #e7e700;
+    border: none;
+    border-radius: 30px;
+    color: black !important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.about__wrapper p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    
+    margin-bottom: 40px;
+}
+.socIcons{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.socIcons a{
+    color: #fff;
+    display: block;
+    margin: .5rem;
+    padding: .25rem;
+}
+
+.innerBody{
+    color: #fff;
+    background: #222 url("/img/logo_bg_15.png") no-repeat center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.lineup__actor{
+    display: block;
+}
+
+
+
+@media (max-width:720px){
+    .header__phone{
+        margin-right: auto;
+    }
+    .ticketLi{
+        width: 100%;
+        text-align: center;
+    }
+    .lineup__item{
+        grid-template-columns:40% 40%;
+        gap: 5% 5%;
+        margin-bottom: 25rem;
+    }
+    .foto{
+        width: 100%;
+        height: 40vw;
+    }
+    .foto img{
+        display: block;
+    }
+
+}
