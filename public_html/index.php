@@ -7,49 +7,26 @@
 <body>
 
 <div class="wrapper">
-    <div class="container">
-        <div class="header">
-            <div class="header__menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item">
-                        <a href="/about/" class="menu__list-link">О НАС</a>
-                    </li>
-
-                    <li class="menu__list-item">
-                        <a href="/lineup/" class="menu__list-link">ЛАЙНАП</a>
-                    </li>
-
-                    <li class="menu__list-item">
-                        <a href="/where/" class="menu__list-link">МЕСТО</a>
-                    </li>
-
-                    <li class="menu__list-item">
-                        <a href="/prod/" class="menu__list-link">ПРОДЮССЕРСКИЙ ЦЕНТР</a>
-                    </li>
-
-                    <li class="menu__list-item">
-                        <a href="/contacts/" class="menu__list-link">КОНТАКТЫ</a>
-                    </li>
-
-                    <li class="header__phone">
-                        <div class="phone">+7 924 758 8837</div>
-                    </li>
-                    <li class="ticketLi">
-                        <a href="/tickets/" class="button">Купить билет</a>
-                    </li>
-                </ul>
-                </div>
+    <?require($_SERVER["DOCUMENT_ROOT"]."/menu.php");?>
+      <div class="main__section">
+        <div class="main__item">
+            <div class="main__item-block">
+              <img class="main__logo" src="/img/klipartz.png" alt="">
+              <div class="main__text">Международный молодежный <br> экономический форум <br> "Братство Шёлового Пути"</div>
+            </div>
+            <div class="main__date">
+                <p><i class="fa-regular fa-calendar-minus"></i>Январь, 14 | Воскресенье</p>
+                <p><i class="fa-regular fa-clock"></i>21:00-00:00</p>
+                <p><i class="fa-solid fa-location-dot"></i>Манчьжурия</p>
             </div>
         </div>
-      <div class="main">  
-        <p class="main__text">INTERNATIONAL FELICITY FEST <br>«TRUE NOMADS»</p>
-        <div class="mail__logo">
-            <img src="/img/logo_yellow.png" class="main__img" alt="logo">
-        </div>
-        <p class="main__data">Улан-Удэ / ТРЦ Capital Mall
-	        <br>25.08.2023 / 18:00
-        </p>
-		  <?require($_SERVER["DOCUMENT_ROOT"]."/soc.php");?>
+
+
+
+
+
+
+<!--		  --><?//require($_SERVER["DOCUMENT_ROOT"]."/soc.php");?>
       </div>
     </div>
 </div>

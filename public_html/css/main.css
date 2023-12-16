@@ -15,8 +15,9 @@ body {
 p{
     margin-bottom: .75rem;
 }
+
 .wrapper {
-    background: url(/img/main.webp) center center no-repeat;
+    background: url(/img/bg3.jpg) center center no-repeat;
     background-size: cover;
     min-height: 100vh;
     vertical-align: middle;
@@ -32,7 +33,7 @@ a {
 }
 
 .container {
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
     z-index: 5;
 }
 
@@ -50,17 +51,34 @@ a {
 .menu__list {
     display: flex;
     justify-content: space-between;
-    gap: 35px;
+    gap: 50px;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 
 .menu__list-link {
     color: #fff;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 119px;
+    top: 26px;
+    padding-top: 15px;
+}
+
+.menu__list-item1:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 5px 0;
 }
 
 .header__phone {
@@ -85,33 +103,47 @@ a {
 
 .main__text {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
     color: #fff;
 }
 
-.main {
+.main__section {
     text-align: center;
     padding-bottom: 2rem;
+
 }
 
-.main__img {
-    max-width: 300px;
+.main__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__date {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.main__date i {
+    margin-right: 15px;
+}
+
+.main__logo {
+    max-width: 200px;
     width: 100%;
-    margin-bottom: 40px;
 }
 
-.main__data {
-    font-size: 28px;
-    color: #fff;
-}
 
 h1 {
     text-align: center;
-    margin-top: 70px;
     font-size: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .lineup__item {
@@ -169,8 +201,25 @@ h1 {
     text-align: center;
     font-size: 22px;
     font-weight: 300;
-    max-width: 700px;
-      margin: 1rem auto;
+    max-width: 1200px;
+    margin: 1rem auto;
+  }
+
+  .about_us__text {
+      display: flex;
+      justify-content: space-between;
+      gap: 120px;
+      text-align: start;
+      font-size: 18px;
+  }
+
+  .about_us__text2 {
+      max-width: 550px;
+      width: 100%;
+  }
+
+  .about_us__text i {
+      margin-right: 10px;
   }
 
   .ticket__wraper {
@@ -243,10 +292,25 @@ h1 {
     min-height: 100vh;
 }
 
+.bgfond {
+    color: #fff;
+    background: #222 url("/img/bgbg3.png") no-repeat center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: 700px 700px;
+}
+
 .lineup__actor{
     display: block;
 }
 
+.center__wrapper i {
+    margin-right: 15px;
+}
+
+.center__wrapper h2 {
+    font-size: 20px;
+}
 
 
 @media (max-width:720px){
