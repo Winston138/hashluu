@@ -3,7 +3,7 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/header.php");?>
 	<title>Благотворительный фонд "БУЯН"</title>
 </head>
-<body class="bgfond">
+<body class="innerBody">
 <?require($_SERVER["DOCUMENT_ROOT"]."/menu.php");?>
     <div class="center__wrapper">
         <h1>Благотворительный фонд "БУЯН"</h1>

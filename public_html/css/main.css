@@ -17,11 +17,10 @@ p{
 }
 
 .wrapper {
-    background: url(/img/bg3.jpg) center center no-repeat;
+    background: url(/img/1.jpg) center center no-repeat;
     background-size: cover;
     min-height: 100vh;
-    vertical-align: middle;
-    background-attachment: fixed;
+    vertical-align: bottom;
 }
 
 ul {
@@ -59,7 +58,8 @@ a {
 
 
 .menu__list-link {
-    color: #fff;
+    color:#fff!important;
+    text-shadow: 1px 1px 1px #000;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 700;
@@ -105,11 +105,14 @@ a {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin: 20px 0;
     color: #fff;
+    max-width: 410px;
+    width: 100%;
 }
 
 .main__section {
+    margin-top: 150px;
     text-align: center;
     padding-bottom: 2rem;
 
@@ -119,6 +122,10 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .main__date {
@@ -135,7 +142,7 @@ a {
 }
 
 .main__logo {
-    max-width: 200px;
+    max-width: 150px;
     width: 100%;
 }
 
@@ -207,10 +214,10 @@ h1 {
 
   .about_us__text {
       display: flex;
-      justify-content: space-between;
-      gap: 120px;
+      gap: 30px;
       text-align: start;
       font-size: 18px;
+      padding-left: 20px;
   }
 
   .about_us__text2 {
@@ -287,18 +294,12 @@ h1 {
 
 .innerBody{
     color: #fff;
-    background: #222 url("/img/logo_bg_15.png") no-repeat center;
-    background-attachment: fixed;
-    min-height: 100vh;
-}
-
-.bgfond {
-    color: #fff;
     background: #222 url("/img/bgbg3.png") no-repeat center;
     background-attachment: fixed;
     min-height: 100vh;
     background-size: 700px 700px;
 }
+
 
 .lineup__actor{
     display: block;
@@ -311,6 +312,148 @@ h1 {
 .center__wrapper h2 {
     font-size: 20px;
 }
+
+.center__wrapper a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.main__section-info {
+    background: url(/img/bg3.png) center center no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.main__section__info-text {
+    max-width: 1300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+форма2
+* {
+    box-sizing: border-box;
+}
+
+.decor {
+    position: relative;
+    max-width: 400px;
+    margin: 120px auto 0;
+    background-color: rgb(79 80 81 / 53%);
+    border-radius: 30px;
+}
+.form-left-decoration, .form-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #222222;
+    border-radius: 20px;
+}
+.form-left-decoration {
+    bottom: 60px;
+    left: -30px;
+}
+.form-right-decoration {
+    top: 60px;
+    right: -30px;
+}
+.form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: white;
+}
+.form-left-decoration:before {
+    top: -20px;
+}
+.form-left-decoration:after {
+    top: 20px;
+    left: 10px;
+}
+.form-right-decoration:before {
+    top: -20px;
+    right: 0;
+}
+.form-right-decoration:after {
+    top: 20px;
+    right: 10px;
+}
+.circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+}
+.form-inner {
+    padding: 50px;
+}
+.form-inner input,
+.form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #E9EFF6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-inner input[type="submit"] {
+    margin-top: 30px;
+    background: #e9eff6;
+    border-bottom: 4px solid #222222;
+    color: #757575;
+    font-size: 14px;
+}
+.form-inner textarea {
+    resize: none;
+}
+.form-inner h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #707981;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .about_us__text {
+        flex-wrap: wrap;
+        padding-left: 25px;
+    }
+    .main__section {
+        margin-top: 50px;
+    }
+}
+
 
 
 @media (max-width:720px){
